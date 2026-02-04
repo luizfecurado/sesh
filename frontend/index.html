@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesh | Dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="app-container">
+        <header>
+            <h1>Sesh <span>.</span></h1>
+            <p>Seu universo de entretenimento</p>
+        </header>
+
+        <main>
+            <section id="stats-panel">
+                <div class="card">
+                    <h3>Total</h3>
+                    <p id="total-count">0</p>
+                </div>
+                <div class="card">
+                    <h3>Média</h3>
+                    <p id="media-nota">0.0</p>
+                </div>
+            </section>
+
+            <section id="content-list">
+                <div class="list-header">
+                    <h2>Histórico</h2>
+                    <button onclick="carregarDados()">🔄 Atualizar</button>
+                </div>
+                
+                <ul id="lista-itens">
+                    </ul>
+            </section>
+        </main>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
